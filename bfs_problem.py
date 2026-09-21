@@ -20,8 +20,8 @@ def classificar_lutadores(grafo):
     n = len(grafo)
 
     # -1 = ainda não visitado / cinza
-    #  0 = bonzinho / vermelho
-    #  1 = vilão / azul
+    #  0 = bonzinho / azul
+    #  1 = vilão / vermelho
     cor = [-1] * n
 
     for inicio in range(n):
