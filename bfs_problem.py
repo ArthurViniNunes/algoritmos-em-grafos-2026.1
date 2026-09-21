@@ -19,6 +19,7 @@ from collections import deque
 def classificar_lutadores(grafo):
     n = len(grafo)
 
+    # Vetor de coloração
     # -1 = ainda não visitado / cinza
     #  0 = bonzinho / azul
     #  1 = vilão / vermelho
