@@ -19,9 +19,9 @@ from collections import deque
 def classificar_lutadores(grafo):
     n = len(grafo)
 
-    # -1 = ainda não visitado
-    #  0 = bonzinho
-    #  1 = vilão
+    # -1 = ainda não visitado / cinza
+    #  0 = bonzinho / vermelho
+    #  1 = vilão / azul
     cor = [-1] * n
 
     for inicio in range(n):
