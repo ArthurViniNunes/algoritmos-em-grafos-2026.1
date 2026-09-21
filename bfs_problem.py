@@ -47,7 +47,7 @@ def classificar_lutadores(grafo):
                         cor[v] = 1 - cor[u]
                         fila.append(v)
 
-                    # Os dois têm a mesma cor
+                    # Os dois têm a mesma cor / Nessa parte que verifica aresta que nao é da arvore
                     elif cor[v] == cor[u]:
                         return False, None
 
