@@ -24,14 +24,14 @@ def classificar_lutadores(grafo):
     #  1 = vilão / vermelho
     cor = [-1] * n
 
-    for inicio in range(n):
+    for atual in range(n):
 
         # O grafo pode ser desconexo
-        if cor[inicio] != -1:
+        if cor[atual] != -1:
             continue
 
-        fila = deque([inicio])
-        cor[inicio] = 0
+        fila = deque([atual])
+        cor[atual] = 0
 
         while fila:
             u = fila.popleft()
